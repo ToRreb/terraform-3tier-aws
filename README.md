@@ -1,8 +1,25 @@
 🌐 AWS 3-Tier Architecture with Terraform
 
+📝 Summary 
+This project demonstrates how I built a complete web infrastructure on Amazon Web Services (AWS) — similar to how a production system would be deployed by a real company.
 
-Hello! 👋
-This project showcases my practical approach to designing and deploying real-world cloud infrastructure that is scalable, secure, and well-architected. Using Terraform, I implemented a production-style 3-tier architecture on AWS, applying best practices I’ve carefully studied, tested, and refined.
+It includes:
+
+    🌐 A public-facing website for users (frontend)
+
+    ⚙️ A backend system to process logic and API requests
+
+    🗄️ A protected database for storing data securely
+
+To automate the setup, I used Terraform, an Infrastructure as Code (IaC) tool that lets you define cloud resources in reusable code instead of clicking around the AWS console. This ensures:
+
+    🔐 Security – no hardcoded secrets or open access
+
+    💰 Cost control – uses AWS Budgets and alarms
+
+    🔁 Repeatability – deploy the exact same system anytime
+
+Behind the scenes, this project reflects my hands-on approach to building scalable, secure, and modular cloud infrastructure using best practices from the AWS Well-Architected Framework. I designed a three-tier architecture with Terraform modules, remote state management, and AWS-native services like EC2, RDS, IAM, and S3.
 
 
 🏗️ Architecture Overview
@@ -76,5 +93,6 @@ If scaling this up further, areas of improvement would include:
 | Cost Awareness | AWS Budgets + CloudWatch Alarms               |
 
 
+![3TierArch](https://github.com/user-attachments/assets/2d0a81cb-dd0e-42ca-becc-307e8a7c6dd9)
 
 
