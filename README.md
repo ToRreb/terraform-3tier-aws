@@ -76,24 +76,5 @@ If scaling this up further, areas of improvement would include:
 | Cost Awareness | AWS Budgets + CloudWatch Alarms               |
 
 
-📁 Repo Structure (Simplified)
-
-
-├── modules/
-│   ├── app-tier/
-│   ├── web-tier/
-│   ├── db-tier/ 
-│   ├── iam/
-│   ├── networking/
-│   └── s3/
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── terraform.tfvars
-└── provider.tf
-
-
-
-
 
 
