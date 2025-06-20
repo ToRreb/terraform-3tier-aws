@@ -1,6 +1,8 @@
 🌐 AWS 3-Tier Architecture with Terraform
 
-This project demonstrates how to design and provision a production-style, scalable, and resilient 3-tier architecture on AWS using Terraform. It's built entirely with infrastructure as code, with a focus on modularity, automation, and best practices for cloud architecture.
+Hello! 👋
+This project showcases my practical approach to designing and deploying real-world cloud infrastructure that is scalable, secure, and well-architected. Using Terraform, I implemented a production-style 3-tier architecture on AWS, applying best practices I’ve carefully studied, tested, and refined.
+
 🏗️ Architecture Overview
 
     Custom VPC with public and private subnets across multiple availability zones
@@ -15,7 +17,8 @@ This project demonstrates how to design and provision a production-style, scalab
 
     Bash scripting and variable configuration for clean, reusable environments
 
-The infrastructure is designed with reliability, security, and cost control in mind — no hardcoded secrets, no manual provisioning.
+The infrastructure is designed with reliability, security, and cost control in mind, no hardcoded secrets, no manual provisioning.
+
 🚧 Current Development
 
 The infrastructure is fully deployed. Ongoing enhancements include:
@@ -49,25 +52,30 @@ If scaling this up further, areas of improvement would include:
     Advanced monitoring using CloudWatch dashboards and X-Ray tracing
 
 🔧 Tech Stack
-Category	Tools & Services
-Cloud Provider	AWS (EC2, S3, RDS, IAM, VPC, CloudWatch)
-IaC	Terraform (modular structure, remote backend)
-OS	Amazon Linux 2
-Frontend	React (served from EC2 behind ALB)
-Backend	Node.js (PM2-managed)
-Database	Aurora MySQL (Multi-AZ)
-Security	IAM Roles, Security Groups, S3 Policies
-Cost Awareness	AWS Budgets + CloudWatch Alarms
+
+| Category       | Tools & Services                              |
+| -------------- | --------------------------------------------- |
+| Cloud Provider | AWS (EC2, S3, RDS, IAM, VPC, CloudWatch)      |
+| IaC            | Terraform (modular structure, remote backend) |
+| OS             | Amazon Linux 2                                |
+| Frontend       | React (served from EC2 behind ALB)            |
+| Backend        | Node.js (PM2-managed)                         |
+| Database       | Aurora MySQL (Multi-AZ)                       |
+| Security       | IAM Roles, Security Groups, S3 Policies       |
+| Cost Awareness | AWS Budgets + CloudWatch Alarms               |
+
 📁 Repo Structure (Simplified)
 
 ├── modules/
-│   ├── vpc/
-│   ├── ec2/
-│   ├── rds/
+│   ├── app-tier/
+│   ├── web-tier/
+│   ├── db-tier/ 
+│   ├── iam/
+│   ├── networking/
 │   └── s3/
-├── env/
-│   └── prod/
-│       └── main.tf
+├── main.tf
 ├── variables.tf
 ├── outputs.tf
-└── backend.tf
+├── terraform.tfvars
+└── provider.tf
+
