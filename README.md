@@ -1,9 +1,12 @@
 🌐 AWS 3-Tier Architecture with Terraform
 
+
 Hello! 👋
 This project showcases my practical approach to designing and deploying real-world cloud infrastructure that is scalable, secure, and well-architected. Using Terraform, I implemented a production-style 3-tier architecture on AWS, applying best practices I’ve carefully studied, tested, and refined.
 
+
 🏗️ Architecture Overview
+
 
     Custom VPC with public and private subnets across multiple availability zones
 
@@ -19,15 +22,19 @@ This project showcases my practical approach to designing and deploying real-wor
 
 The infrastructure is designed with reliability, security, and cost control in mind, no hardcoded secrets, no manual provisioning.
 
+
 🚧 Current Development
+
 
 The infrastructure is fully deployed. Ongoing enhancements include:
 
     PM2 process manager for zero-downtime Node.js backend restarts
 
     Secure file uploads to S3 using pre-signed URLs and scoped IAM permissions
+    
 
 🤔 Project Goals
+
 
 This build explores what goes into a real-world cloud deployment beyond just “getting it working.” It focuses on:
 
@@ -38,8 +45,10 @@ This build explores what goes into a real-world cloud deployment beyond just “
     Building with fault tolerance, identity management, and scalability in mind
 
     Exploring principles of separation of concerns across web, app, and database tiers
+    
 
 🧠 Future Improvements
+
 
 If scaling this up further, areas of improvement would include:
 
@@ -50,8 +59,10 @@ If scaling this up further, areas of improvement would include:
     CI/CD integration with GitHub Actions or CodePipeline
 
     Advanced monitoring using CloudWatch dashboards and X-Ray tracing
+    
 
 🔧 Tech Stack
+
 
 | Category       | Tools & Services                              |
 | -------------- | --------------------------------------------- |
@@ -64,7 +75,9 @@ If scaling this up further, areas of improvement would include:
 | Security       | IAM Roles, Security Groups, S3 Policies       |
 | Cost Awareness | AWS Budgets + CloudWatch Alarms               |
 
+
 📁 Repo Structure (Simplified)
+
 
 ├── modules/
 │   ├── app-tier/
@@ -78,4 +91,9 @@ If scaling this up further, areas of improvement would include:
 ├── outputs.tf
 ├── terraform.tfvars
 └── provider.tf
+
+
+
+
+
 
